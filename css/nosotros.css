@@ -1,0 +1,75 @@
+#banner{
+    margin-top: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#banner img{
+   margin: 20%;
+    width: 100%;
+    height: 276px;
+    object-fit: cover;
+    
+}
+
+#banner .contenedor1{
+    position: absolute;
+    top: 49.4%;
+    left: 50%;
+    width: 100%;
+    height: 276px;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgba(255,255,255,0.7);
+    padding: 15px;
+}
+
+.contenedor1 h1{
+    text-align: center;
+    font-size: 2.4em;
+    font-family: 'Abril Fatface', cursive;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+#contenedor{
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+body{
+    background: #ecf0f1;
+}
+article{
+	background: white;
+	float: left;
+	height: 100%;
+	padding: 20px;;
+    margin: 20px;
+	text-align: justify;
+	width: 70%;
+}
+
+
+.bloque-derecha{
+	background: white;
+	float: right;
+	width: 290px;
+    margin: 20px;
+}
+
+.bloque-derecha .titulo{
+	background: #1d1d1d;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+    text-align: center;
+	width: 100%;
+}
+
+.bloque-derecha{
+    
+    text-align: center;
+}

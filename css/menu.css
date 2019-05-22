@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor3 {
+	background:#ccc;
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+ 
+	/* Flexbox */
+	display:flex;
+	flex-flow:row wrap;
+}
+ 
+header {
+	background:#fff;
+    position: fixed;
+    top: 0;
+	width:100%;
+	padding: 20px;
+    transition: top 0.3s;
+    
+ 
+	/* Flexbox */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+ 
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+ 
+header .logo {
+	color:#fff;
+	font-size:60px;
+}
+ 
+header .logo img {
+	width:200px;
+	vertical-align: top;
+    margin-left: 50%;
+}
+ 
+header nav {
+	width:50%;
+	/* Flexbox */
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+ 
+header nav a {
+    float: left;
+    display: block;
+	background:#fff;
+	color:#000;
+	text-align: center;
+	text-decoration: none;
+    padding:15px;
+    font-size: 17px;
+	
+ 
+	/* Flexbox */
+	flex-grow:1;
+}
+ 
+header nav a:hover {
+	color: #4169E1; 
+}
+
+#tienda {
+    background: grey;
+    color: white;
+    width: 40px;
+    height: 5px 0 50px 0;
+}
+#tienda:hover{
+    background: black;
+}
