@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=News+Cycle&display=swap');
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body{
-     background: #F8F9F9;
+    background:  #FBFCFC;
 }
 
 .hero-image img {
@@ -30,71 +34,55 @@ body{
     margin-top: 13px;
   }
 
-  .hero-text h2{
+  .hero-image h3{
     text-align: center;
     font-size: 2.5em;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    font-family: 'Playfair Display', serif;
+    font-family: 'DM Serif Display', serif;
   }
 
+.cartas{
+    width: 100%;
+    padding: 20px 30px 0 90px;
+    
+    
+}
 
-  .cartas{
-    width:  87.9%;
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 350px;
+    margin: 20px;;
+    font-family: 'News Cycle', sans-serif;
+    display: inline-block;
     background: #fff;
-    float: center;
-    margin: 50px 20px 0 75px;
-    z-index: 100;
-    padding: 0 0 70px 0;
+    vertical-align: top;
     
-    
-}
+  }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 350px;
-  text-align: center;
-  font-family: arial;
-  display: inline-block;
-  margin: 20px 3px 0 10px;
-  margin-left: 28px;
-  background: #FFF;
-  padding:0 0 50px 0;
-  vertical-align: top;
-    
-}
+  .card p{
+      margin-top: 15px;
+      letter-spacing: 2px;
+  }
+ 
+  .price {
+    color: grey;
+    font-size: 10px;
+  }
 
-.title {
-  color: grey;
-  font-size: 10px;
-  margin-top: 15px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  padding: 8px;
-  color: #000;;
-  background-color: #E5E7E9;
-  text-align: center;
-  cursor: pointer;
-  width: 40%;
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-button:hover {
-  background-color: #D7DBDD;
-}
-
+  
 footer{
     background: #353333 ; 
     color: #fff;
-    margin-top: 100px;
+    margin-top: 200px;
+    padding: 10px 0px;
+    padding-left: 50px;
     width: 100%;
     height: 300px;
+    right: 10px;
     clear: both;
     
 }
@@ -102,4 +90,6 @@ footer{
 footer img{
     height: 40px;
     width: 40px;
+    
 }
+  

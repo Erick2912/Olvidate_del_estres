@@ -1,83 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#navbar{
+    background-color: #fff; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    height: 200px;
+    transition: top 0.8s; /* Transition effect when sliding down (and up) */ 
+    z-index: 100;   
 }
 
-
-.contenedor3 {
-	background:#ccc;
-	width:90%;
-	max-width:1000px;
-	margin:auto;
- 
-	/* Flexbox */
-	display:flex;
-	flex-flow:row wrap;
-}
- 
-header {
-	background:#fff;
-    position: fixed;
-    top: 0;
-	width:100%;
-	padding: 20px;
-    transition: top 0.3s;
-    
- 
-	/* Flexbox */
-	display: flex;
-	justify-content:space-between;
-	align-items:center;
- 
-	flex-direction:row;
-	flex-wrap:wrap;
-}
- 
-header .logo {
-	color:#fff;
-	font-size:60px;
-}
- 
-header .logo img {
-	width:200px;
-	vertical-align: top;
-    margin-left: 50%;
-}
- 
-header nav {
-	width:50%;
-	/* Flexbox */
-	display:flex;
-	flex-wrap:wrap;
-	align-items:center;
-}
- 
-header nav a {
-    float: left;
-    display: block;
-	background:#fff;
-	color:#000;
-	text-align: center;
-	text-decoration: none;
-    padding:15px;
-    font-size: 17px;
-	
- 
-	/* Flexbox */
-	flex-grow:1;
-}
- 
-header nav a:hover {
-	color: #4169E1; 
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  float: right;
+  margin: 30px 0;
+  margin-top: 70px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Cairo', arial;
+  padding-right: 20px
+  
 }
 
-#tienda {
-    background: grey;
-    color: white;
-    width: 40px;
-    height: 5px 0 50px 0;
+#navbar a:hover {
+color: #0000FF;
+
 }
-#tienda:hover{
-    background: black;
+
+#navbar img{
+  text-align: center;
+  height: 80px;
+  font-size: 36px;
+  line-height: 60px;
+  padding: 0 30px;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 700;
+  margin-top: 50px;
 }
+
+#navbar a.active{
+ background: #424242;
+  color: #fff; 
+}
+#navbar a.active:hover{
+  background: #000;
+}
+

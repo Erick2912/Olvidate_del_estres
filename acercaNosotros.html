@@ -5,23 +5,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Acerca de Nosotros</title>
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/acercaNosotros.css">
+        <link rel="stylesheet" href="css/menu.css">
     </head>
     <body>
-            <header id="navbar" >
-                    <a href="index.html" class="logo"><img src="imagenes/cropped-logocorporativo.png" alt=""></a>
-                    <div class="menu-toggle" ></div>
-                    <nav>
-                        <ul>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="acercaNosotros.html">Acerca de nosotros</a></li>
-                            <li><a href="Testimonios.html">Testimonio</a></li>
-                            <li><a href="Contacto.html">Contacto</a></li>
-                            <li><a href="#" class="active">Tienda</a></li>
-                        </ul>
-                    </nav>
-                    <div class="clearfix"></div>
-                </header>
+            <header>   
+                    <div id="navbar">
+                       <img src="imagenes/cropped-logocorporativo.png" alt="" href="index.html">
+                        <a href="#contact" class="active">Tienda</a>
+                        <a href="Contacto.html">Contacto</a>
+                        <a href="Testimonios.html">Testimonios</a>
+                        <a href="acercaNosotros.html">Acerca de nosotros</a>
+                        <a href="blog.html">Blog</a>
+                      </div>
+                    </header>
 
         <div class="hero-image">
             <img src="imagenes/30592_II.jpg" >
@@ -90,10 +87,29 @@
                         </aside>
                 </section>
               
-              <footer>
-                <h1>Siguenos en nuestras redes sociales</h1>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-        </footer>
+                <footer class="footer">
+                        <h1>Siguenos en nuestras redes sociales</h1>
+                        <div class="social">
+                        <a href="https://www.facebook.com/olvidaelestres"><img src="imagenes/facebook-icon.png" alt=""></a>
+                        <a href="https://twitter.com/olvidaelestres"><img src="imagenes/icon-twitter.png" alt=""></a>
+                      </div>
+                </footer>
+        
+                <script
+                src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                crossorigin="anonymous"></script>
+                <script>
+              var prevScrollpos = window.pageYOffset;
+              window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+                } else {
+                document.getElementById("navbar").style.top = "-200px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+                 </script>
     </body>
 </html>
